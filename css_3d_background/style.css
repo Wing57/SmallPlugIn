@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1500;
+          perspective: 1500;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  overflow: hidden;
+}
+
+.box_inner {
+  height: 100%;
+  background-image: url(web.png);
+  background-position: 0% 0%;
+  -webkit-animation: animate 15s linear -15s infinite both;
+          animation: animate 15s linear -15s infinite both;
+  -webkit-transform: rotateX(45deg) scale(2);
+          transform: rotateX(45deg) scale(2);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% -703px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% -703px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

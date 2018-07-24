@@ -1,0 +1,33 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+//容器
+.box {
+    transform-style: preserve-3d;
+    perspective: 1500;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    overflow: hidden;
+}
+
+.box_inner {
+    height: 100%;
+    background-image: url(web.png);
+    background-position: 0% 0%;
+    animation: animate 15s linear -15s infinite both;//动画提前执行
+    transform: rotateX(45deg) scale(2);//放大2倍左右 为了填满容器
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% -703px;
+    }
+}
+
+https://photos.app.goo.gl/e15FSyTeA9eSBAoM7
